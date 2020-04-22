@@ -3,7 +3,7 @@
   padding:0px;
   box-sizing: border-box;
 }
-
+/* header area with mountains and my name displayed across the image */
 header {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -12,32 +12,37 @@ header {
     "my-name";
   width: 100%;
   height: 500px;
-  background: url(mountains.jpg);
+  background: url(images/mountains.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
   image-rendering: -webkit-optimize-contrast;
 }
-.my-name h1{
+.my-name{
   grid-area: my-name;
-  justify-self: center;
+}
+.my-name h1{
+  text-align: center;
   font-weight: normal;
   color:#d8e4ff;
   font-family: 'Fredoka One', cursive;
   font-size: 50px;
   letter-spacing: 10px;
-  text-align: center;
+  
 }
 
+/*------------------------------------------------*/
 
 
+/* this is where the navigation bar is including name as logo
+and all the links to the sections of the website*/
 .nav-bar-grid{
   grid-area: nav-bar;
 }
 .nav-bar-flex{
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: space-around;
   height: 30px;
   align-items: center;
@@ -45,7 +50,6 @@ header {
 }
 .nav-bar-flex h2{
   width: 300px;
-  
   font-family: 'Fredoka One', cursive;
   font-size: 20px;
   letter-spacing: 10px;
@@ -70,3 +74,40 @@ header {
   padding: 5px 5px;
   
 }
+/*-----------------------------------------------*/
+
+
+/* this is the about me section */
+.about-me h3{
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.about-me-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:30%;
+  height:325px;
+  
+  margin: 20px auto auto auto;
+  
+  
+  
+}
+.about-me-box img{
+  width:50%;
+  border-radius: 50%;
+  
+}
+
+.about-me-box p{
+  margin-top: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
