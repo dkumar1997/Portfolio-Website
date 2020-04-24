@@ -137,14 +137,15 @@ and all the links to the sections of the website*/
   width: 350px;
   
 }
-.project-flex .box:hover{
-  opacity: 0.8; 
-}
+
 .project-flex .box .image-box{
   position: absolute;
   top:0;
   left:0;
 
+}
+.project-flex .box:hover .image-box{
+  opacity: 0.2;
 }
 
 .project-flex .box .image-box img{
@@ -197,7 +198,7 @@ and all the links to the sections of the website*/
 }
 
 .project-flex .box:hover .content h4{
-  transform: translateY(0);
+  transform: translateY(0px);
   
 }
 
@@ -220,4 +221,5 @@ and all the links to the sections of the website*/
   
 }
 
+/* ---------------------------------- */
 
