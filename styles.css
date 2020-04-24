@@ -100,7 +100,7 @@ and all the links to the sections of the website*/
 }
 .about-me-box img{
   width:50%;
-  border-radius: 50%;
+  border-radius: 100%;
   
 }
 
@@ -109,5 +109,31 @@ and all the links to the sections of the website*/
   font-family: 'Montserrat Alternates', sans-serif;
   letter-spacing: 2px;
   text-align: center;
+}
+
+/*--------------------------*/
+
+/* this is the section for projects*/
+.projects h3{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.project-flex{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 40px;
+  justify-content: center;
+  
+}
+.proj1{
+  
+}
+.proj2{
+  justify-self: center
 }
 
