@@ -125,7 +125,7 @@ and all the links to the sections of the website*/
 .project-flex{
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 300px 300px 300px;
   grid-gap: 40px;
   justify-content: center;
   
