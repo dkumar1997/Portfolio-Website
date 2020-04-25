@@ -8,126 +8,136 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/23ef1400b6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
-      
-      <header role="banner">
-        <div class="my-name">
-          <h1>HI, I'M DHEERAJ</h1>
+    <header role="banner"
+            id="top">
+      <div class="my-name">
+        <h1>HI, I'M DHEERAJ</h1>
+      </div>
+      <div class="nav-bar-grid">
+        <div class="nav-bar-flex nav-scrolled">
+          <a href="#top"><h2>Dheeraj Kumar</h2></a>
+          <nav  role="navigation">
+            <ul>
+              <a href="#about-me"><li>About Me</li></a>
+              <a href="#projects"><li>Projects</li></a>
+              <a href="#work"><li>Work</li></a>
+              <a href="#education"><li>Education</li></a>
+              <li>Resume</li>
+            </ul>
+          </nav>
         </div>
-        <div class="nav-bar-grid">
-          <div class="nav-bar-flex">
-            <h2>Dheeraj Kumar</h2>
-            <nav  role="navigation">
-              <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Education</li>
-                <li>Work</li>
-              </ul>
-            </nav>
-          </div>
+      </div>
+    </header>
+    <main role ="main">
+      <section class="about-me" id="about-me">
+        <h3>ABOUT ME</h3>
+        <div class="about-me-box">
+          <img src="images/my_image.jpeg" alt="picture of Dheeraj Kumar">
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
         </div>
-      </header>
-      <main role ="main">
-        <section class="about-me">
-          <h3>ABOUT ME</h3>
-          <div class="about-me-box">
-            <img src="images/my_image.jpeg">
-            
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-          </div>
-        </section>
-        <section class="projects">
-          <h3>PROJECTS</h3>
-          <div class="project-flex">
-            <div class="box">
-              <div class="image-box">
-                <img src="images/send-it-on.jpg" width="300px" height="250px" class="proj2">
+      </section>
+      <section class="projects" id="projects">
+        <h3>PROJECTS</h3>
+        <div class="project-flex">
+          <div class="box">
+            <div class="image-box">
+              <img src="images/send-it-on.jpg" width="300px" height="250px" class="proj2" alt="website send it on picture">
+            </div>
+            <div class="content">
+              <div>
+                <h4>
+                  SEND IT ON
+                </h4>
+                <p>
+                  HTML, CSS, JavaScript 
+                </p>
+                <p class="icons">
+                  <a href="https://github.com/dkumar1997/Send-It-On-Website" target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-chrome fa-7x"></i>
+                  </a>
+                </p>
+
               </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="image-box">
+              <img src = "images/booking_app.png" width="300px" height="250px" class="proj3" alt="picture of schedule building app">
+            </div>
+            <div class="content">
+              <div>
+                <h4>
+                  Booking App
+                </h4>
+                <p>
+                  Java, MySQL
+                </p>
+                <p class="icons">
+                    <a href=https://github.com/dkumar1997/Alberta-Health-Scheduling-Application target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image-box">
+              <img src="images/milky-way.jpg" width="300px" height="250px" class="proj1" alt="picture of poker game">
+            </div>
               <div class="content">
                 <div>
                   <h4>
-                    SEND IT ON
+                    Poker
                   </h4>
                   <p>
-                    HTML,CSS,JavaScript 
+                    Java
                   </p>
                   <p class="icons">
-                    <a href="https://github.com/dkumar1997/Send-It-On-Website" target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
-                    <a href="#" target="_blank">
-                      <i class="fab fa-chrome fa-7x"></i>
-                    </a>
-                  </p>
-                  
-                </div>
-              </div>
-              
-            </div>
-            <div class="box">
-              <div class="image-box">
-                <img src = "images/booking_app.png" width="300px" height="250px" class="proj3">
-              </div>
-              <div class="content">
-                <div>
-                  <h4>
-                    Booking App
-                  </h4>
-                  <p>
-                    Java,MySQL
-                  </p>
-                  <p class="icons">
-                      <a href=https://github.com/dkumar1997/Alberta-Health-Scheduling-Application target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
+                    <a href="https://github.com/dkumar1997/CPSC-441-Group-Poker-Project" target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="box">
-              <div class="image-box">
-                <img src="images/milky-way.jpg" width="300px" height="250px" class="proj1">
-              </div>
-                <div class="content">
-                  <div>
-                    <h4>
-                      Poker
-                    </h4>
-                    <p>
-                      Java
-                    </p>
-                    <p class="icons">
-                      <a href="https://github.com/dkumar1997/CPSC-441-Group-Poker-Project" target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
-                    </p>
-                  </div>
-                </div>
-            </div>
-
           </div>
-        </section>
-        <section class= "work">
-          <h3>WORK</h3>
-          <p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </div>
+      </section>
+      <section class= "work" id="work">
+        <h3>TECHNOLOGIES WORKED WITH</h3>
+        <p>
+          <i class="fab fa-java fa-5x" style="color:orange"></i>
+          <i class="fab fa-python fa-5x" style="color:#4B8BBE"></i>
+          <i class="fab fa-js-square fa-5x" style="color:#F0DB4F"></i>
+          <i class="fab fa-css3-alt fa-5x" style="color:#264de4"></i>
+          <i class="fab fa-html5 fa-5x" style="color:#E44D26"></i>
+
+          <i class="fas fa-database fa-5x " style="color:lightpink"></i>
+          <i class="fab fa-git fa-5x" style="color:#3E2C00"></i>
+          <i class="fab fa-cuttlefish fa-5x" style="color:#8a2be2"></i>
+          <i class="fab fa-linux fa-5x" style="color:#0B57A4"></i>
+        </p>
+      </section>
+      <section class= "education" id="education">
+        <h3>EDUCATION</h3>
+        <p><img src="images/ucalgary.jpg" alt="logo of university of calgary"></p>
+        
+        <p>Bachelor of Science in Computer Science</p>
+        <p>Mathematics Minor</p>
+        <p>September 2016 to May 2021</p>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>Contact Info</p>
+      <p class="email">dheeraj.kumar@ucalgary.ca</p>
+      <a class="bottom-icon" href="https://github.com/dkumar1997" target="_blank"><i class="fab fa-github-square fa-2x" style="display:block;"></i></a>
 
 
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        </section>
-        <section class= "education">
-          <h3>EDUCATION</h3>
-        </section>
-      </main>
-      <footer role="contentinfo">
-      </footer>
-    </div>
+    </footer>
+    
   </body>
 </html>

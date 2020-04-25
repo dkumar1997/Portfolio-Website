@@ -2,6 +2,21 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+h3{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  margin-top:100px;
+}
+a{
+  text-decoration: none;
 }
 /* header area with mountains and my name displayed across the image */
 header {
@@ -18,6 +33,7 @@ header {
   background-position: center;
   background-blend-mode: darken;
   image-rendering: -webkit-optimize-contrast;
+  
 }
 .my-name{
   grid-area: my-name;
@@ -39,6 +55,7 @@ header {
 and all the links to the sections of the website*/
 .nav-bar-grid{
   grid-area: nav-bar;
+  
 }
 .nav-bar-flex{
   display: flex;
@@ -47,12 +64,20 @@ and all the links to the sections of the website*/
   height: 30px;
   align-items: center;
   position: fixed;
+  z-index: 3;
+  text-transform: uppercase;
+  
+  
 }
 .nav-bar-flex h2{
   width: 300px;
-  font-family: 'Fredoka One', cursive;
+  
   font-size: 20px;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  
+  color: white;
   
 }
 .nav-bar-flex ul{
@@ -64,14 +89,18 @@ and all the links to the sections of the website*/
   height: 100%;
   margin-right: 300px;
   
+  
+  
 }
 .nav-bar-flex ul li{
-  color:#0D2818;
+  color: white;
   font-weight: bold;
   font-family: 'Fredoka One', cursive;
   font-size: 15px;
   letter-spacing: 5px;
   padding: 5px 5px;
+  text-transform: capitalize;
+  text-transform: uppercase;
   
 }
 /*-----------------------------------------------*/
@@ -80,22 +109,16 @@ and all the links to the sections of the website*/
 /* this is the about me section */
 .about-me h3{
   margin-top: 40px;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Fredoka One', cursive;
-  font-size: 25px;
-  letter-spacing: 5px;
+  margin-bottom: 20px;
 }
+
 .about-me-box{
   display: flex;
   flex-direction: column;
   align-items: center;
   width:30%;
   height:325px;
-  
   margin: 20px auto auto auto;
-  
-  
   
 }
 .about-me-box img{
@@ -114,14 +137,7 @@ and all the links to the sections of the website*/
 /*--------------------------*/
 
 /* this is the section for projects*/
-.projects h3{
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Fredoka One', cursive;
-  font-size: 25px;
-  letter-spacing: 5px;
-  margin-bottom: 20px;
-}
+
 .project-flex{
   display: grid;
   grid-template-rows: 1fr;
@@ -222,4 +238,67 @@ and all the links to the sections of the website*/
 }
 
 /* ---------------------------------- */
+
+
+
+/* this is the work section of the page */
+.work p{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 50%;
+  margin: auto;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+/* ---------------------------------- */
+
+/*education section of the page */
+.education p{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  font-weight:bolder;
+  letter-spacing: 2px;
+  text-align: center;
+ 
+}
+.education p img{
+  text-align: center;
+}
+
+/* this is where the footer goes */
+footer{
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+footer p{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-align: center;
+  
+}
+.email{
+  margin-top:10px;
+}
+.bottom-icon i{
+  color: white; 
+  text-align: center;
+  margin-top:10px;
+}
+
+/*----------------------*/
+
+/*-----*/
+.nav-scrolled{
+  background-color: black;
+}
 
