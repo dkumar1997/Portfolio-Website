@@ -301,6 +301,14 @@ footer p{
   text-align: center;
   margin-top:10px;
 }
+footer div{
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+}
+footer div a{
+  margin-right:10px;
+}
 
 /*----------------------*/
 
