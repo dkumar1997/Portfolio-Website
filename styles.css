@@ -61,7 +61,7 @@ and all the links to the sections of the website*/
   display: flex;
   width: 100%;
   justify-content: space-around;
-  height: 30px;
+  height: 50px;
   align-items: center;
   position: fixed;
   z-index: 3;
@@ -71,14 +71,16 @@ and all the links to the sections of the website*/
 }
 .nav-bar-flex h2{
   width: 300px;
-  
   font-size: 20px;
   letter-spacing: 6px;
   color: black;
   font-family: 'Permanent Marker', cursive;
-  
   color: white;
   
+  
+}
+.nav-bar-flex h2:hover{
+  color: aqua;
 }
 .nav-bar-flex ul{
   display: flex;
@@ -102,6 +104,10 @@ and all the links to the sections of the website*/
   text-transform: capitalize;
   text-transform: uppercase;
   
+  
+}
+.nav-bar-flex ul li:hover{
+  color:aqua;
 }
 /*-----------------------------------------------*/
 
@@ -301,5 +307,37 @@ footer p{
 /*-----*/
 .nav-scrolled{
   background-color: black;
+  
+}
+.burger{
+  position: absolute;
+  top:1.2rem;
+  right:7rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height: 21px;
+}
+.burger .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius:10px;
 }
 
+@media only screen and (max-width:1190px){
+  .burger{
+    display: flex;
+  }
+  .nav-bar-flex ul{
+    display: none;
+  }
+  .nav-bar-flex{
+    height: 60px;
+  }
+  .nav-bar-grid{
+    justify-items: center;
+    
+  }
+}
