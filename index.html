@@ -10,51 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/23ef1400b6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
     
   </head>
   <body>
     <header role="banner"
             id="top">
-      <div class="my-name">
-        <h1>HI, I'M DHEERAJ</h1>
-      </div>
-      <div class="nav-bar-grid">
-        <div class="nav-bar-flex nav-scrolled">
-          <a href="#top"><h2>Dheeraj Kumar</h2></a>
-          <a href="#" class="burger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <nav  role="navigation">
-            <ul>
-              <a href="#about-me"><li>About Me</li></a>
-              <a href="#projects"><li>Projects</li></a>
-              <a href="#work"><li>Work</li></a>
-              <a href="#education"><li>Education</li></a>
-              <a href="/documents/Resume.pdf" target ="_blank" title="My Resume"><li>Resume</li></a>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      
+      <div><a href ="#"><h2 class="logo">DHEERAJ KUMAR</h2></a></div>
+      <nav  role="navigation">
+        <ul class = "navigation-links">
+          <li><a href="#about-me" id="extra">About Me</a></li>
+          <li><a href="#projects" id="extra">Projects</a></li>
+          <li><a href="#work" id="extra">Work</a></li>
+          <li><a href="#education" id="extra">Education</a></li>
+          <li><a href="/documents/Resume.pdf" target ="_blank" title="My Resume">Resume</a></li>
+        </ul>
+      </nav>
+      
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        
     </header>
+    <div class="big-image">
+    <div class="my-name">
+        <h1>HI, I'M DHEERAJ</h1>
+    </div>
+    </div>
+    
     <main role ="main">
       <section class="about-me" id="about-me">
         <h3>ABOUT ME</h3>
         <div class="about-me-box">
           <img src="images/my_image.jpeg" alt="picture of Dheeraj Kumar">
-
           <p>Hi I am currently in my fourth year of Computer Sciences at the University of Calgary. I am passionate about using software designs to collaboratively create meaningful and influential projects. I enjoy playing basketball and discovering diverse cultures in which I can learn and expand my perspective! </p>
         </div>
       </section>
       <section class="projects" id="projects">
         <h3>PROJECTS</h3>
         <div class="project-flex">
-          <div class="box">
+          <div class="box" onclick="">
             <div class="image-box">
               <img src="images/send-it-on.jpg" width="300px" height="250px" class="proj2" alt="website send it on picture">
             </div>
-            <div class="content">
+            <div class="content" >
               <div>
                 <h4>
                   SEND IT ON
@@ -73,7 +73,7 @@
             </div>
 
           </div>
-          <div class="box">
+          <div class="box" onclick="">
             <div class="image-box">
               <img src = "images/booking_app.png" width="300px" height="250px" class="proj3" alt="picture of schedule building app">
             </div>
@@ -91,7 +91,7 @@
               </div>
             </div>
           </div>
-          <div class="box">
+          <div class="box" onclick="">
             <div class="image-box">
               <img src="images/milky-way.jpg" width="300px" height="250px" class="proj1" alt="picture of poker game">
             </div>
@@ -114,7 +114,7 @@
       </section>
       <section class= "work" id="work">
         <h3>TECHNOLOGIES WORKED WITH</h3>
-        <p>
+        <div>
           <i class="fab fa-java fa-5x" style="color:orange"></i>
           <i class="fab fa-python fa-5x" style="color:#4B8BBE"></i>
           <i class="fab fa-js-square fa-5x" style="color:#F0DB4F"></i>
@@ -125,7 +125,7 @@
           <i class="fab fa-git fa-5x" style="color:#3E2C00"></i>
           <i class="fab fa-cuttlefish fa-5x" style="color:#8a2be2"></i>
           <i class="fab fa-linux fa-5x" style="color:#0B57A4"></i>
-        </p>
+        </div>
       </section>
       <section class= "education" id="education">
         <h3>EDUCATION</h3>
@@ -146,6 +146,6 @@
 
 
     </footer>
-    
+    <script src="main_page.js"></script>
   </body>
 </html>

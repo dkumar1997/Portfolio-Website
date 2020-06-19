@@ -14,14 +14,14 @@ h3{
   letter-spacing: 5px;
   margin-bottom: 20px;
   
-  padding-top: 80px;
-  margin-top: -80px;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 a{
   text-decoration: none;
 }
 /* header area with mountains and my name displayed across the image */
-header {
+.big-image{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -56,62 +56,90 @@ header {
 
 /* this is where the navigation bar is including name as logo
 and all the links to the sections of the website*/
-.nav-bar-grid{
-  grid-area: nav-bar;
-  
-}
-.nav-bar-flex{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  height: 50px;
-  align-items: center;
-  position: fixed;
-  z-index: 3;
-  text-transform: uppercase;
-  
-  
-}
-.nav-bar-flex h2{
-  width: 300px;
-  font-size: 20px;
-  letter-spacing: 6px;
-  color: black;
+header .logo{
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  font-weight: bold;
+  margin-top: 5px;
   font-family: 'Permanent Marker', cursive;
   color: white;
-  
-  
+  letter-spacing: 6px;
+  font-size: 20px;
+  transition: 0.5s;
 }
-.nav-bar-flex h2:hover{
+header .logo:hover{
   color: aqua;
 }
-.nav-bar-flex ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  align-items: center; 
-  width: 100%;
-  height: 100%;
-  margin-right: 300px;
-  
-  
-  
+header{
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 0 80px;
+    box-sizing: border-box;
+    z-index: 50;
+    background-color: black;
+    height: 65px;
+    
 }
-.nav-bar-flex ul li{
+
+
+header nav{
+  float:right;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  
+  
+ 
+}
+header nav ul li{
+  list-style: none;
+  position: relative;
+  width:160px;
+	
+}
+header nav ul li a{
+  height: 65px;
+  line-height: 65px;
+  padding: 0 20px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
   font-family: 'Fredoka One', cursive;
-  font-size: 15px;
   letter-spacing: 5px;
-  padding: 5px 5px;
-  text-transform: capitalize;
-  text-transform: uppercase;
-  
+  text-align: center;
+  transition: 0.5s;
   
 }
-.nav-bar-flex ul li:hover{
-  color:aqua;
+header nav ul li:hover a{
+  color: aqua;
 }
+header nav ul .sub-menu:before{
+  content: '\f0d7';
+  font-family: FontAwesome;
+  font-style: normal;
+  position: absolute;
+  line-height: 65px;
+  color: #fff;
+  right:5px;
+}
+.menu-toggle{
+  color:#fff;
+  float: right;
+  line-height: 65px;
+	height: 65px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
 /*-----------------------------------------------*/
 
 
@@ -125,8 +153,7 @@ and all the links to the sections of the website*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:30%;
-  height:325px;
+  width:50%;
   margin: 20px auto auto auto;
   
 }
@@ -149,19 +176,20 @@ and all the links to the sections of the website*/
 /* this is the section for projects*/
 
 .project-flex{
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 350px 350px 350px;
-  grid-gap: 40px;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
   justify-content: center;
-  position: relative;
 }
 .project-flex .box{
   position: relative;
   overflow: hidden;
+  max-height: 250px;
+  max-width: 350px;
+  margin: 50px 50px;
   height: 250px;
   width: 350px;
-  
 }
 
 .project-flex .box .image-box{
@@ -181,6 +209,8 @@ and all the links to the sections of the website*/
   width:350px;
   height: 250px;
   object-fit: cover; 
+  max-height: 250px;
+  max-width: 350px;
 }
 .project-flex .box .content{
   position: absolute;
@@ -252,14 +282,16 @@ and all the links to the sections of the website*/
 
 
 /* this is the work section of the page */
-.work p{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 50%;
+.work div{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: center;
   margin: auto;
-  justify-items: center;
-  grid-row-gap: 20px;
+  align-items:center;
+}
+.work div i{
+  margin: 20px;
 }
 /* ---------------------------------- */
 
@@ -323,7 +355,7 @@ footer div a{
 .burger{
   position: absolute;
   top:1.2rem;
-  right:7rem;
+  right:1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -337,18 +369,84 @@ footer div a{
   border-radius:10px;
 }
 
+
 @media only screen and (max-width:1190px){
   .burger{
     display: flex;
   }
-  .nav-bar-flex ul{
-    display: none;
+  
+  nav ul{
+    display: flex;
+    flex-direction: column;  
+  }
+  nav ul li{
+    display: block;
   }
   .nav-bar-flex{
     height: 60px;
   }
-  .nav-bar-grid{
-    justify-items: center;
+  
+}
+@media only screen and (max-width:836px){
+  .about-me-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    margin: 20px auto auto auto;
+  }
+  
+}
+@media only screen and (max-width:450px){
+  .project-flex .box .image-box img{
+    width: 275px;
+    height: 250px;
+  }
+}
+@media (max-width:1290px){
+  main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: env(safe-area-inset);
+    overflow: hidden;
+  }
+  header{
+    padding: 0 20px;
     
+  }
+  .menu-toggle{
+    display: block;
+  }
+  nav{
+    display: block;
+  }
+  header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 65px);
+    background: #333;
+    top:65px;
+    left:-100%;
+    transition: 0.5s;
+  }
+  header .active{
+    left:0px;
+  }
+  header nav ul{
+    display: block;
+    text-align: center;
+  }
+  header nav ul li{
+    margin: 0;
+    width: 100%;
+  }	
+  
+  header nav ul li a{
+    height: 60px;
+    line-height: 60px;
+  }
+  #extra{
+    display: none;
   }
 }
